@@ -5,4 +5,4 @@ const prodConfig = require('./webpack.prod')
 
 let config = process.env.NODE_ENV === 'development' ? devConfig : prodConfig
 
-module.exports = merge(baseConfig, prodConfig)
+module.exports = merge(baseConfig, config)
